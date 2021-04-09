@@ -17,10 +17,10 @@ $(document).ready(function() {
   // add previous/next buttons
   var navButtons = $('<div>');
   var prevIcon = $('<img>').attr({
-    'src': 'images/arrow-left.png'
+    'src': 'images/8675309-arrow-left.png'
   });
   var nextIcon = $('<img>').attr({
-    'src': 'images/arrow-right.png'
+    'src': 'images/8675309-arrow-right.png'
   });
   var prevButton = $('<div>')
     .addClass('btn-prev')
