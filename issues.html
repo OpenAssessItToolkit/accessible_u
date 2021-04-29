@@ -140,6 +140,14 @@
         </li>
 
         <li>
+            <p><span class="label">Images of text</span>. Notice that the text is embedded in the hero image.  Screen readers
+                cannot read text in images.  They can only read real selectable text.  If a person who was blind was on this
+                site they could not know about the event because the title, date, and location of the event is in the image.
+                If it is unavoidable the alternate text needs to have the same information so users who are unable to see
+                the image have access to its content.</p>
+        </li>
+
+        <li>
             <p><span class="label">Missing or excessive alternate text on decorative images</span>. Screen reader users
                 do
                 not need access to images whose purpose is solely decorative. The example on this page is the horizontal
@@ -168,6 +176,22 @@
         </li>
 
         <li>
+            <p><span class="label">Insufficient visual cues</span>. This page includes visual cues that show mouse users
+                when they're pointing to clickable items on the page such as links. However, this same functionality is
+                not provided for keyboard users, and they would arguably benefit from it even more than mouse users.
+                Without a clear visual indication of one's current location on the page, keyboard users can have a very
+                difficult time getting their bearings as they tab through links and controls. Visual cues for mouse
+                users are typically provided in CSS using the selector <span class="code">:hover</span>. The same visual
+                cues can be replicated for keyboard users by using the selector <span class="code">:focus</span>. Here's
+                an example in CSS:</p>
+
+            <div class="snippet">a:hover, a:focus {<br />
+                &nbsp;color: white;<br />
+                &nbsp;background-color: black;<br />
+                }</div>
+        </li>
+
+        <li>
             <p><span class="label">Inaccessible dropdown menu</span>. The navigation menu on this page includes
                 sub-menus that appear when users hover over the menus with a mouse. However, these same menus do not
                 appear for non-mousers. If a user navigates to the menu
@@ -191,22 +215,6 @@
             <p>This is the first of three features on the AU demo site that have a standard design pattern recommended
                 in the WAI-ARIA Authoring Guide. The others are Issue #14 (Inaccessible modal window) and Issue #15
                 (inaccessible carousel).</p>
-        </li>
-
-        <li>
-            <p><span class="label">Insufficient visual cues</span>. This page includes visual cues that show mouse users
-                when they're pointing to clickable items on the page such as links. However, this same functionality is
-                not provided for keyboard users, and they would arguably benefit from it even more than mouse users.
-                Without a clear visual indication of one's current location on the page, keyboard users can have a very
-                difficult time getting their bearings as they tab through links and controls. Visual cues for mouse
-                users are typically provided in CSS using the selector <span class="code">:hover</span>. The same visual
-                cues can be replicated for keyboard users by using the selector <span class="code">:focus</span>. Here's
-                an example in CSS:</p>
-
-            <div class="snippet">a:hover, a:focus {<br />
-                &nbsp;color: white;<br />
-                &nbsp;background-color: black;<br />
-                }</div>
         </li>
 
         <li>
