@@ -35,6 +35,12 @@
  *
  */
 
+#carousel:hover .btn-prev,
+#carousel:hover .btn-next {
+  opacity: 1
+}
+
+
 .btn-prev,
 .btn-next {
   position: absolute;
@@ -43,6 +49,10 @@
   border: 0;
   padding: 0;
   transition: padding .4s ease-out;
+}
+.btn-prev,
+.btn-next {
+  opacity: .4;
 }
 .btn-prev {
   left:0;
