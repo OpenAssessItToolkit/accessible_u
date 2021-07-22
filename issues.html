@@ -26,15 +26,16 @@
             padding: 0em 2em 0 2em;
         }
 
-        #logo img {
+        #logo  {
             border: none;
-            width: 400px;
+            max-width: 400px;
             display: block;
             margin: 0 auto;
+            padding: 1em 0 0 0;
         }
 
         h1 {
-            padding: 1em 0 .5em 0;
+            padding: 0.5em 0 .5em 0;
             font-size: 2em;
             text-align: center;
         }
@@ -45,6 +46,26 @@
             margin-top: 1em;
             border-top: 1px solid #767676;
             color: #000;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        .examples img {
+            border: 1px solid #ccc;
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            background-color: yellow;
+            color:#000;
         }
 
         p,
@@ -116,17 +137,37 @@
 <body>
     <div class="wrap">
     <header>
-        <img id="logo" src="images/8675309-l-o-g-o-after.png" alt="Accessible University logo" style="width:400px;"/>
+        <img id="logo" src="images/8675309-l-o-g-o-after.png" alt="Accessible University logo"/>
         <h1>Common Accessibility Issues and How to Assess Them</h1>
     </header>
     <main>
-    <p>This page summarizes the accessibility issues demonstrated on the Accessible University (AU) home page <a href="before_u.html"><strong>Inaccessible Version</strong></a>. With each issue, a solution is proposed. To see these accessibility solutions implemented, view the AU Home Page <a href="after_u.html"><strong>Accessible Version</strong></a>.</p>
+    <p>This page summarizes the accessibility issues demonstrated on the Accessible University (AU) home page. An inaccessible before fixes page and accessible after fixes page are provided to contrast the differences between the sites with explanations.<p>
+
+    <div class="container examples">
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="before_u.html">
+                    <strong>Inaccessible Before Fixes Version</strong>
+                    <img class="img-fluid" alt="screenshot of before fixes example" src="images/before_screenshot.png"/>
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="after_u.html">
+                    <strong>Accessible After Fixes Version</strong>
+                    <img class="img-fluid" alt="screenshot of after fixes example" src="images/after_screenshot.png"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br/>
 
     <p>
-        There are accompanying "How-to do a web accessibility assessment" videos based on the example site. You can watch the videos inline below or <a href="https://youtube.com/playlist?list=PLF4_5fOOz5tlYmG6BnX8q_ILEzBPNrDbK">view playlist of all the videos on YouTube</a>
+        Below you will find some "How-to do a web accessibility assessment" videos based on the example sites. You can also <a href="https://youtube.com/playlist?list=PLF4_5fOOz5tlYmG6BnX8q_ILEzBPNrDbK">view a playlist of all the videos on YouTube</a>.
     </p>
 
     <ol>
+
 
         <li>
             <h2>Missing bypass block (skip-to main content)</h2>
