@@ -12,32 +12,44 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.1em;
-            color: black;
-            background-color: white;
+            color: #555;
+            background-color: #ddd;
             margin: 0 1em;
+            line-height: 1.5;
+        }
+
+        .wrap {
+            background: #fff;
+            max-width: 1000px;
+            display: block;
+            margin: 0 auto;
+            padding: 0em 2em 0 2em;
         }
 
         #logo img {
             border: none;
+            width: 400px;
+            display: block;
+            margin: 0 auto;
         }
 
         h1 {
-            margin-left: 0.5em;
-            margin-top: 0;
+            padding: 1em 0 .5em 0;
             font-size: 2em;
+            text-align: center;
         }
 
         h2 {
             font-size: 1.3em;
+            padding-top: 2em;
+            margin-top: 1em;
+            border-top: 1px solid #767676;
+            color: #000;
         }
 
         p,
         ol {
             line-height: 1.5em;
-        }
-
-        p {
-            margin-left: 1em;
         }
 
         ol {}
@@ -98,14 +110,17 @@
             border-top: 3px solid #514273;
         }
     </style>
+
 </head>
 
 <body>
-
-    <h1>Accessible University: <br>
-        Accessibility Issues and How to Assess Them</h1>
-
-    <p>This page summarizes the accessibility issues demonstrated on the Accessible University (AU) home page (<a href="before_u.html">Inaccessible Version</a>). With each issue, a solution is proposed. To see these accessibility solutions implemented, view the AU Home Page <a href="after_u.html">Accessible Version</a>.</p>
+    <div class="wrap">
+    <header>
+        <img id="logo" src="images/8675309-l-o-g-o-after.png" alt="Accessible University logo" style="width:400px;"/>
+        <h1>Common Accessibility Issues and How to Assess Them</h1>
+    </header>
+    <main>
+    <p>This page summarizes the accessibility issues demonstrated on the Accessible University (AU) home page <a href="before_u.html"><strong>Inaccessible Version</strong></a>. With each issue, a solution is proposed. To see these accessibility solutions implemented, view the AU Home Page <a href="after_u.html"><strong>Accessible Version</strong></a>.</p>
 
     <p>
         There are accompanying "How-to do a web accessibility assessment" videos based on the example site. You can watch the videos inline below or <a href="https://youtube.com/playlist?list=PLF4_5fOOz5tlYmG6BnX8q_ILEzBPNrDbK">view playlist of all the videos on YouTube</a>
@@ -118,7 +133,7 @@
             <p>
                 A bypass block, otherwise known as a skip-to link, is a mechanism that is available to bypass blocks of content that are repeated on multiple Web pages. In this case, it allows keyboard-only users to skip over the navigation to get to the main content without needing to tab over the entire menu every time they load the page.
             </p>
-            <p>How to test for Bypass Blocks:</p>
+            <p>How to test for Bypass Blocks in Chrome:</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZsvZT5lTsFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </li>
 
@@ -387,7 +402,7 @@
             <p>
         </li>
     </ol>
-
+    </main>
     <footer>
 
         <div id="ccLogo">
@@ -409,7 +424,7 @@
             Subsequent modifications to this instance have been made by Duke University to modernize the look, feel, and code.
         </p>
     </footer>
-
+    </div>
 </body>
 
 </html>
