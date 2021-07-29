@@ -65,7 +65,8 @@ p {
   background: #f9f9f9;
 }
 .btn {
-  font-size: 18px;
+  font-size: 18.5px;
+  font-weight: bold;
 }
 table {
   text-align: center;
