@@ -35,10 +35,9 @@ h3 {
 a {
 	text-decoration: underline;
 }
-th {
-  text-align: center;
+p {
+  line-height: 1.5;
 }
-
 
 /*
  * Clear visible focus
@@ -68,9 +67,11 @@ th {
 .btn {
   font-size: 18px;
 }
-p {
-  line-height: 1.5;
+table {
+  text-align: center;
 }
+
+
 
 /*
  * Footer styles
