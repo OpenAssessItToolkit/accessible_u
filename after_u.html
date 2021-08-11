@@ -193,6 +193,47 @@
                 with five subjects arranged as columns nested within the year columns.
                 Total enrollment, and male and female enrollment percentages, are arranged in rows.
               </div>
+
+              <h3>Last year</h3>
+              <table id="enrollment_last" class="table table-responsive-xl" aria-describedby="table-summary_last">
+                <thead>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <th scope="col">Computer Science</th>
+                    <th scope="col">English</th>
+                    <th scope="col">Economics</th>
+                    <th scope="col">Physics</th>
+                    <th scope="col">Psychology</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td>84</td>
+                    <td>126</td>
+                    <td>43</td>
+                    <td>32</td>
+                    <td>112</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">% Male</th>
+                    <td>89%</td>
+                    <td>84%</td>
+                    <td>73%</td>
+                    <td>69%</td>
+                    <td>20%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" >% Female</th>
+                    <td>11%</td>
+                    <td>16%</td>
+                    <td>27%</td>
+                    <td>31%</td>
+                    <td>80%</td>
+                  </tr>
+                </tbody>
+              </table>
+
               <div id="table-summary_this" class="sr-only">
                 This table shows enrollment over a one-year period by subject and gender.
                 This academic year is arranged in columns,
@@ -200,84 +241,42 @@
                 Total enrollment, and male and female enrollment percentages, are arranged in rows.
               </div>
 
-              <table id="enrollment"></table>
-
-              <h3>Last year</h3>
-              <table id="enrollment_last" class="table table-responsive-xl" aria-describedby="table-summary_last">
-                <thead>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <th scope="col" id="subj-cs1">Computer Science</th>
-                    <th scope="col" id="subj-eng1">English</th>
-                    <th scope="col" id="subj-eco1">Economics</th>
-                    <th scope="col" id="subj-phy1">Physics</th>
-                    <th scope="col" id="subj-psy1">Psychology</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row" id="total">Total</th>
-                    <td headers="y07-08 subj-cs1 total">84</td>
-                    <td headers="y07-08 subj-eng1 total">126</td>
-                    <td headers="y07-08 subj-eco1 total">43</td>
-                    <td headers="y07-08 subj-phy1 total">32</td>
-                    <td headers="y07-08 subj-psy1 total">112</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="male">%&nbsp;Male</th>
-                    <td headers="y07-08 subj-cs1 male">89%</td>
-                    <td headers="y07-08 subj-eng1 male">84%</td>
-                    <td headers="y07-08 subj-eco1 male">73%</td>
-                    <td headers="y07-08 subj-phy1 male">69%</td>
-                    <td headers="y07-08 subj-psy1 male">20%</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" id="female">%&nbsp;Female</th>
-                    <td headers="y07-08 subj-cs1 female">11%</td>
-                    <td headers="y07-08 subj-eng1 female">16%</td>
-                    <td headers="y07-08 subj-eco1 female">27%</td>
-                    <td headers="y07-08 subj-phy1 female">31%</td>
-                    <td headers="y07-08 subj-psy1 female">80%</td>
-                  </tr>
-                </tbody>
-              </table>
-
               <h3>This year</h3>
               <table id="enrollment_this" class="table table-responsive-xl" aria-describedby="table-summary_this">
                 <thead>
                   <tr>
                     <td>&nbsp;</td>
-                    <th scope="col" id="subj-cs2">Computer Science</th>
-                    <th scope="col" id="subj-eng2">English</th>
-                    <th scope="col" id="subj-eco2">Economics</th>
-                    <th scope="col" id="subj-phy2">Physics</th>
-                    <th scope="col" id="subj-psy2">Psychology</th>
+                    <th scope="col">Computer Science</th>
+                    <th scope="col">English</th>
+                    <th scope="col">Economics</th>
+                    <th scope="col">Physics</th>
+                    <th scope="col">Psychology</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row" id="total">Total</th>
-                    <td headers="y08-09 subj-cs2 total">82</td>
-                    <td headers="y08-09 subj-eng2 total">140</td>
-                    <td headers="y08-09 subj-eco2 total">45</td>
-                    <td headers="y08-09 subj-phy2 total">34</td>
-                    <td headers="y08-09 subj-psy2 total">101</td>
+                    <th scope="row">Total</th>
+                    <td>82</td>
+                    <td>140</td>
+                    <td>45</td>
+                    <td>34</td>
+                    <td>101</td>
                   </tr>
                   <tr>
-                    <th scope="row" id="male">%&nbsp;Male</th>
-                    <td headers="y08-09 subj-cs2 male">87%</td>
-                    <td headers="y08-09 subj-eng2 male">80%</td>
-                    <td headers="y08-09 subj-eco2 male">69%</td>
-                    <td headers="y08-09 subj-phy2 male">69%</td>
-                    <td headers="y08-09 subj-psy2 male">22%</td>
+                    <th scope="row">% Male</th>
+                    <td>87%</td>
+                    <td>80%</td>
+                    <td>69%</td>
+                    <td>69%</td>
+                    <td>22%</td>
                   </tr>
                   <tr>
-                    <th scope="row" id="female">%&nbsp;Female</th>
-                    <td headers="y08-09 subj-cs2 female">13%</td>
-                    <td headers="y08-09 subj-eng2 female">20%</td>
-                    <td headers="y08-09 subj-eco2 female">31%</td>
-                    <td headers="y08-09 subj-phy2 female">31%</td>
-                    <td headers="y08-09 subj-psy2 female">78%</td>
+                    <th scope="row">% Female</th>
+                    <td>13%</td>
+                    <td>20%</td>
+                    <td>31%</td>
+                    <td>31%</td>
+                    <td>78%</td>
                   </tr>
                 </tbody>
               </table>
