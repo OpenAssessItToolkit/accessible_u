@@ -26,10 +26,18 @@
     <div id="banner" class="container clearfix">
       <nav aria-label="version" class="float-right">
         <span class="float-left">Examples:</span>
+        <!--
         <ul class="utility-menu float-left list-unstyled">
           <li><a href="before_u.html" aria-current="page" aria-label="before version with problems">Before</a></li>
           <li><a href="after_u.html" aria-label="after version with fixes">After</a></li>
         </ul>
+-->
+        <!---->
+        <ul class="utility-menu float-left list-unstyled">
+          <li><a href="before_u.html" aria-label="before version with problems">Before</a></li>
+          <li><a href="after_u.html" aria-current="page" aria-label="after version with fixes">After</a></li>
+        </ul>
+        <!---->
       </nav>
       <a href="/">
         <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
@@ -146,13 +154,15 @@
               </p>
 
               <div class="heading">Can you spot the barriers?</div>
-              <!-- 
+              <!-- Issue #1
               <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/>
                 -->
                 <!-- compliant code -->
                              <img  style="float:left;max-width:200px;margin-right:10px"  src="images/8675309-block.jpg" alt="Road closed Sign, acting as an obstruction to road access"/>
-                  There are at least 18 accessibility issues on this page.
-                To see a list of all known issues, <a href="issues.html">click here</a>.
+                  <!--  -->
+                             There are at least 18 accessibility issues on this page.
+                To see a list of all known issues, 
+                <a href="issues.html">click here</a>.
                 To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
                 To view a popup list of accessibility issues:</p>
                 <a class="btn btn-primary" href="cheatsheet.html">click here</a>
@@ -262,11 +272,22 @@
                     Email:
                     <input type="text" name="email" class="form-control" />
                   </div>
+                   <!-- Issue #2
                   <div class="form-group">
                     Country:
                     <input type="text" name="country" class="form-control" />
                   </div>
+                  -->
+                  <!-- compliant code  -->
                   <div class="form-group">
+                    Form label
+                    <label for="country">
+                    Country:
+                    </label>
+                    <input type="text" name="country" id="country" class="form-control" autocomplete="country-name" fdprocessedid="zxllgb">
+                    </div>
+                    <!---->
+                      <div class="form-group">
                     <div>Desired major(s):</div>
                     <div class="" id="majors">
                       <div class="major"><input type="checkbox"/> Computer Science </div>
@@ -276,13 +297,18 @@
                       <div class="major"><input type="checkbox"/> Psychology </div>
                     </div>
                   </div>
+                  <!-- Issue #3    
                   <div id="captcha">
                     <p>Security Test</p>
                     <p>Please enter the two words you see below, separated by a space</p>
                     <input type="text" name="captcha">
                     <img src="images/captcha.png">
+                  </div>      -->
+                   <!-- compliant code  -->
+                   <div id="captcha">
+                    <img style="width:100%;" src="images/not-robot.png" alt="Non-functional. I am not a robot. reCAPTCHA version 3 static example."/>
                   </div>
-
+                   <!---->
                   <div class="mt-2">
                     <input id="submit" type="submit" name="submit" value="Submit" class="btn btn-lg btn-success btn-block" />
                   </div>
