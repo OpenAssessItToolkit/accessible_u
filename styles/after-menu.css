@@ -35,6 +35,10 @@
 .navbar-dark {
 	color: #fff;
 }
+.navbar-dark .navbar-nav button {
+	background: transparent;
+	border: none;
+}
 .navbar-dark .navbar-nav .nav-link {
 	color: lightgreen;
 	text-decoration: none;
