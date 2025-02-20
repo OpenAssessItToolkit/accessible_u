@@ -25,11 +25,14 @@
  *
  */
 
- #logo {
-   width:100%;
-   max-width:400px;
-   margin: 0 auto;
- }
+a.logo-link {
+  display:block;
+  max-width:400px;
+  float:left;
+}
+#logo {
+  width: 100%;
+}
 .heading {
   font-size: 2rem;
   font-weight: normal;
